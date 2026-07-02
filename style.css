@@ -90,22 +90,46 @@ h1 {
 .btn-ghost { border: 1px solid var(--line); color: var(--ink); }
 .btn-ghost:hover { border-color: var(--ink); }
 
-/* Terminal signature element */
-.terminal {
-  background: #0F1618; border-radius: 10px; overflow: hidden;
-  box-shadow: 0 24px 48px -18px rgba(15, 22, 24, 0.35);
-  font-family: var(--font-mono); font-size: 0.86rem;
+/* Notecard signature element — a real result, not a stock code snippet */
+.notecard {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: 0 24px 48px -24px rgba(18, 24, 27, 0.18);
+  padding: 26px 28px;
 }
-.terminal-bar {
-  display: flex; align-items: center; gap: 8px;
-  padding: 12px 16px; background: #182225; border-bottom: 1px solid #223032;
+.notecard-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 22px; }
+.notecard-tag {
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em;
+  color: var(--teal); background: rgba(14, 124, 123, 0.1);
+  padding: 3px 9px; border-radius: 100px;
 }
-.dot { width: 10px; height: 10px; border-radius: 50%; }
-.dot.red { background: #E8590C; } .dot.yellow { background: #E8B930; } .dot.green { background: #4FB286; }
-.terminal-title { margin-left: 8px; color: #7A8C8E; font-size: 0.8rem; }
-.terminal-body { padding: 22px; color: #D6E0DE; overflow-x: auto; }
-.terminal-body pre { margin: 0; white-space: pre; }
-.tok-kw { color: #7CC7C4; } .tok-str { color: #E8B930; } .tok-comment { color: #5B6B6A; }
+.notecard-title { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); }
+.notecard-body { display: flex; flex-direction: column; gap: 16px; }
+.bar-row { display: grid; grid-template-columns: 108px 1fr 48px; align-items: center; gap: 12px; }
+.bar-label { font-size: 0.85rem; color: var(--ink); }
+.bar-track { height: 8px; background: #EDF1F0; border-radius: 100px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--teal); border-radius: 100px; }
+.bar-fill.baseline { background: #C7D0CD; }
+.bar-value { font-family: var(--font-mono); font-size: 0.82rem; text-align: right; }
+.notecard-caption {
+  margin: 20px 0 0; font-family: var(--font-mono); font-size: 0.75rem;
+  color: var(--muted); border-top: 1px dashed var(--line); padding-top: 14px;
+}
+
+/* EXPERIENCE */
+.job {
+  display: grid; grid-template-columns: 160px 1fr; gap: 24px;
+  padding: 28px 0; border-bottom: 1px solid var(--line);
+}
+.job:last-child { border-bottom: none; }
+.job-dates { font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); }
+.job-info h3 { font-size: 1.1rem; font-weight: 600; margin: 0 0 10px; }
+.job-loc { font-weight: 400; color: var(--muted); font-size: 0.9rem; }
+.job-info ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 0.95rem; }
+.job-info li { margin-bottom: 6px; }
+
+.more-projects { margin-top: 8px; font-size: 0.92rem; color: var(--muted); }
+.more-projects a { border-bottom: 1px solid var(--ink); }
+.more-projects a:hover { color: var(--teal); border-color: var(--teal); }
 
 /* SECTIONS */
 .section {
@@ -182,6 +206,7 @@ h1 {
   .project, .project.reverse { grid-template-columns: 1fr; }
   .project-visual { display: none; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .job { grid-template-columns: 1fr; gap: 6px; }
   .footer { flex-direction: column; gap: 6px; }
 }
 
