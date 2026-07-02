@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshaya — Data Scientist</title>
+<meta name="description" content="Portfolio of Akshaya, Data Scientist. Projects, skills, and experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- faint dot-grid background, evokes a scatterplot -->
+<div class="dot-grid" aria-hidden="true"></div>
+
+<nav class="nav">
+  <span class="nav-mark">akshaya<span class="accent">.</span></span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="resume.pdf" class="nav-resume">Resume ↓</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Data Scientist</p>
+    <h1>Turning messy data<br>into decisions<span class="accent">.</span></h1>
+    <p class="hero-sub">
+      I'm Akshaya — I build models, pipelines, and tools that make data usable.
+      <!-- TODO: replace with your real one-line positioning, e.g. specialty (ML, NLP, analytics), current role/status -->
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View my work</a>
+      <a href="mailto:your.email@example.com" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="terminal" aria-hidden="true">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">whoami.py</span>
+    </div>
+    <div class="terminal-body">
+<pre><span class="tok-kw">import</span> akshaya
+
+profile = {
+    <span class="tok-str">"role"</span>: <span class="tok-str">"Data Scientist"</span>,
+    <span class="tok-str">"tools"</span>: [<span class="tok-str">"Python"</span>, <span class="tok-str">"SQL"</span>, <span class="tok-str">"scikit-learn"</span>],
+    <span class="tok-str">"focus"</span>: <span class="tok-str">"ML & automation"</span>,
+    <span class="tok-str">"open_to"</span>: <span class="tok-str">"new roles"</span>
+}
+<span class="tok-comment"># run me →</span></pre>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="about" class="section about">
+    <p class="section-label">01 — About</p>
+    <div class="about-grid">
+      <p class="about-text">
+        <!-- TODO: replace with your real bio. 2-4 sentences. Lead with what you DO, not just where you studied. -->
+        I'm a data scientist with a background in [your degree / field], focused on [your specialty — e.g. predictive modeling, NLP, data pipelines].
+        I like projects that turn raw, messy datasets into something a real person can act on — whether that's a dashboard,
+        a model, or a well-placed automation script. Recently I've been working on [current focus / interest].
+      </p>
+      <div class="about-facts">
+        <div class="fact"><span class="fact-label">Based in</span><span>[Your city]</span></div>
+        <div class="fact"><span class="fact-label">Education</span><span>[Degree, University, Year]</span></div>
+        <div class="fact"><span class="fact-label">Currently</span><span>[Job title / "Seeking DS roles"]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <p class="section-label">02 — Projects</p>
+
+    <article class="project">
+      <div class="project-info">
+        <h3>Web Scraping Research Tool</h3>
+        <!-- TODO: swap in your real project title & description -->
+        <p>Built a scraping pipeline to collect and structure data for a research paper, handling
+           rate-limiting, cleaning, and dedup at scale. [Describe the outcome / what it enabled.]</p>
+        <ul class="tags">
+          <li>Python</li><li>BeautifulSoup</li><li>Pandas</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Code →</a>
+          <a href="#">Paper →</a>
+        </div>
+      </div>
+      <div class="project-visual" aria-hidden="true">01</div>
+    </article>
+
+    <article class="project reverse">
+      <div class="project-info">
+        <h3>Streamlit Analytics App</h3>
+        <!-- TODO: swap in your real project title & description -->
+        <p>An interactive app that lets users explore [dataset/domain] in real time — filters,
+           visualizations, and a model-backed prediction feature. [Add a concrete result/metric if you have one.]</p>
+        <ul class="tags">
+          <li>Streamlit</li><li>scikit-learn</li><li>Plotly</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Live demo →</a>
+          <a href="#">Code →</a>
+        </div>
+      </div>
+      <div class="project-visual" aria-hidden="true">02</div>
+    </article>
+
+    <article class="project">
+      <div class="project-info">
+        <h3>[Third project title]</h3>
+        <p>[Description — what problem it solved, your approach, and the outcome.]</p>
+        <ul class="tags">
+          <li>Tag</li><li>Tag</li><li>Tag</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Code →</a>
+        </div>
+      </div>
+      <div class="project-visual" aria-hidden="true">03</div>
+    </article>
+  </section>
+
+  <section id="skills" class="section skills">
+    <p class="section-label">03 — Skills</p>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <p>Python, SQL, R</p>
+      </div>
+      <div class="skill-group">
+        <h4>ML / Data</h4>
+        <p>scikit-learn, Pandas, NumPy, TensorFlow</p>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <p>Git, Streamlit, Tableau, Excel</p>
+      </div>
+      <div class="skill-group">
+        <h4>Cloud</h4>
+        <p>[AWS / GCP / Azure — whichever you know]</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <p class="section-label">04 — Contact</p>
+    <h2>Let's talk data.</h2>
+    <p class="contact-sub">Open to data scientist / analyst roles. Reach out — I usually reply within a day.</p>
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com">Email</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Akshaya</span>
+  <span>Built with HTML/CSS, hosted on GitHub Pages</span>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
