@@ -3,21 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akshaya — Data Scientist</title>
-<meta name="description" content="Portfolio of Akshaya, Data Scientist. Projects, skills, and experience.">
+<title>Akshaya Bharadhwaj — Data Scientist</title>
+<meta name="description" content="Portfolio of Akshaya Bharadhwaj, Data Scientist — ML, NLP, computer vision, and applied research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- faint dot-grid background, evokes a scatterplot -->
 <div class="dot-grid" aria-hidden="true"></div>
 
 <nav class="nav">
   <span class="nav-mark">akshaya<span class="accent">.</span></span>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -28,33 +28,36 @@
 <header class="hero">
   <div class="hero-text">
     <p class="eyebrow">Data Scientist</p>
-    <h1>Turning messy data<br>into decisions<span class="accent">.</span></h1>
+    <h1>Building systems that learn from<br>images, audio, and text<span class="accent">.</span></h1>
     <p class="hero-sub">
-      I'm Akshaya — I build models, pipelines, and tools that make data usable.
-      <!-- TODO: replace with your real one-line positioning, e.g. specialty (ML, NLP, analytics), current role/status -->
+      I'm Akshaya — a Master's student in Data Science at UC Irvine, working across computer vision,
+      audio classification, NLP, and multi-agent LLM systems. I like problems where the data is messy
+      and the stakes are real.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View my work</a>
-      <a href="mailto:your.email@example.com" class="btn btn-ghost">Get in touch</a>
+      <a href="mailto:akshasb1@uci.edu" class="btn btn-ghost">Get in touch</a>
     </div>
   </div>
 
-  <div class="terminal" aria-hidden="true">
-    <div class="terminal-bar">
-      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-      <span class="terminal-title">whoami.py</span>
+  <div class="notecard">
+    <div class="notecard-header">
+      <span class="notecard-tag">RESULT</span>
+      <span class="notecard-title">Raga classification · 12 classes</span>
     </div>
-    <div class="terminal-body">
-<pre><span class="tok-kw">import</span> akshaya
-
-profile = {
-    <span class="tok-str">"role"</span>: <span class="tok-str">"Data Scientist"</span>,
-    <span class="tok-str">"tools"</span>: [<span class="tok-str">"Python"</span>, <span class="tok-str">"SQL"</span>, <span class="tok-str">"scikit-learn"</span>],
-    <span class="tok-str">"focus"</span>: <span class="tok-str">"ML & automation"</span>,
-    <span class="tok-str">"open_to"</span>: <span class="tok-str">"new roles"</span>
-}
-<span class="tok-comment"># run me →</span></pre>
+    <div class="notecard-body">
+      <div class="bar-row">
+        <span class="bar-label">XGBoost</span>
+        <div class="bar-track"><div class="bar-fill" style="width:77.8%"></div></div>
+        <span class="bar-value">77.8%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Random baseline</span>
+        <div class="bar-track"><div class="bar-fill baseline" style="width:33.3%"></div></div>
+        <span class="bar-value">33.3%</span>
+      </div>
     </div>
+    <p class="notecard-caption">228-dim hybrid audio features · GroupKFold CV · severe data scarcity</p>
   </div>
 </header>
 
@@ -64,108 +67,154 @@ profile = {
     <p class="section-label">01 — About</p>
     <div class="about-grid">
       <p class="about-text">
-        <!-- TODO: replace with your real bio. 2-4 sentences. Lead with what you DO, not just where you studied. -->
-        I'm a data scientist with a background in [your degree / field], focused on [your specialty — e.g. predictive modeling, NLP, data pipelines].
-        I like projects that turn raw, messy datasets into something a real person can act on — whether that's a dashboard,
-        a model, or a well-placed automation script. Recently I've been working on [current focus / interest].
+        I'm a data scientist pursuing my Master's at UC Irvine's Donald Bren School of Information and
+        Computer Sciences, with a Bachelor's in Data Science from NMIMS, Mumbai. My work spans deep
+        learning for medical imaging, audio classification under data scarcity, and multi-agent LLM
+        systems for automating data preprocessing. Before UCI, I spent over a year across three internships
+        applying ML to real industry problems — from EV battery manufacturing to streaming platform APIs.
       </p>
       <div class="about-facts">
-        <div class="fact"><span class="fact-label">Based in</span><span>[Your city]</span></div>
-        <div class="fact"><span class="fact-label">Education</span><span>[Degree, University, Year]</span></div>
-        <div class="fact"><span class="fact-label">Currently</span><span>[Job title / "Seeking DS roles"]</span></div>
+        <div class="fact"><span class="fact-label">Based in</span><span>Irvine, CA</span></div>
+        <div class="fact"><span class="fact-label">Education</span><span>M.S. Data Science, UC Irvine — Dec 2026</span></div>
+        <div class="fact"><span class="fact-label">Also</span><span>B.Tech Data Science, NMIMS Mumbai — Aug 2025</span></div>
+        <div class="fact"><span class="fact-label">Currently</span><span>Open to Data Scientist / ML roles</span></div>
       </div>
     </div>
   </section>
 
+  <section id="experience" class="section">
+    <p class="section-label">02 — Experience</p>
+
+    <article class="job">
+      <div class="job-meta">
+        <span class="job-dates">Dec 2024 – Aug 2025</span>
+      </div>
+      <div class="job-info">
+        <h3>Research Intern, Machine Learning — Wipro PARI <span class="job-loc">· Remote</span></h3>
+        <ul>
+          <li>Built and validated ANN models (Python, scikit-learn, R²) to model Li-ion battery manufacturing processes and their effect on downstream material quality.</li>
+          <li>Developed a process-parameter framework across 16 manufacturing stages with industry experts to support data-driven optimization.</li>
+          <li>Contributed to 2 review papers and a research paper on ML-driven EV battery process optimization, currently under submission.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-meta">
+        <span class="job-dates">May 2024 – Jul 2024</span>
+      </div>
+      <div class="job-info">
+        <h3>Data Science Intern — Wipro Water <span class="job-loc">· Navi Mumbai, India</span></h3>
+        <ul>
+          <li>Analyzed and cleaned datasets from urban commercial projects across major Indian cities to surface trends for business decisions.</li>
+          <li>Built Python automation scripts to clean, validate, and format raw data for Salesforce lead creation, replacing a manual process.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-meta">
+        <span class="job-dates">May 2023 – Jul 2023</span>
+      </div>
+      <div class="job-info">
+        <h3>Intern — Idea Crest Solutions <span class="job-loc">· Bangalore, India (Remote)</span></h3>
+        <ul>
+          <li>Developed RESTful APIs (Python, Flask) and optimized MySQL schemas for a streaming platform management system.</li>
+          <li>Built Postman collections to test and document API workflows, reducing integration debugging time.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
   <section id="projects" class="section">
-    <p class="section-label">02 — Projects</p>
+    <p class="section-label">03 — Projects</p>
 
     <article class="project">
       <div class="project-info">
-        <h3>Web Scraping Research Tool</h3>
-        <!-- TODO: swap in your real project title & description -->
-        <p>Built a scraping pipeline to collect and structure data for a research paper, handling
-           rate-limiting, cleaning, and dedup at scale. [Describe the outcome / what it enabled.]</p>
-        <ul class="tags">
-          <li>Python</li><li>BeautifulSoup</li><li>Pandas</li>
-        </ul>
-        <div class="project-links">
-          <a href="#">Code →</a>
-          <a href="#">Paper →</a>
-        </div>
+        <h3>ValidClean — Multi-Agent Data Preprocessing</h3>
+        <p>A 5-agent LLM system that autonomously profiles datasets, infers ML objectives, and generates
+           preprocessing strategies — validated with K-fold cross-validation, paired t-tests, and Cohen's d.
+           Presented at UCI GradSLAM 2026.</p>
+        <ul class="tags"><li>LLMs</li><li>Multi-agent</li><li>Python</li></ul>
+        <div class="project-links"><a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">Code →</a></div>
       </div>
       <div class="project-visual" aria-hidden="true">01</div>
     </article>
 
     <article class="project reverse">
       <div class="project-info">
-        <h3>Streamlit Analytics App</h3>
-        <!-- TODO: swap in your real project title & description -->
-        <p>An interactive app that lets users explore [dataset/domain] in real time — filters,
-           visualizations, and a model-backed prediction feature. [Add a concrete result/metric if you have one.]</p>
-        <ul class="tags">
-          <li>Streamlit</li><li>scikit-learn</li><li>Plotly</li>
-        </ul>
-        <div class="project-links">
-          <a href="#">Live demo →</a>
-          <a href="#">Code →</a>
-        </div>
+        <h3>Skin Cancer Detection from Dermoscopic Images</h3>
+        <p>A multimodal CNN + MLP pipeline trained on 400k+ dermoscopic images (ISIC 2024), reaching 0.93
+           recall and 0.942 ROC-AUC under 0.1% class imbalance.</p>
+        <ul class="tags"><li>PyTorch</li><li>CNN</li><li>Medical imaging</li></ul>
+        <div class="project-links"><a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">Code →</a></div>
       </div>
       <div class="project-visual" aria-hidden="true">02</div>
     </article>
 
     <article class="project">
       <div class="project-info">
-        <h3>[Third project title]</h3>
-        <p>[Description — what problem it solved, your approach, and the outcome.]</p>
-        <ul class="tags">
-          <li>Tag</li><li>Tag</li><li>Tag</li>
-        </ul>
-        <div class="project-links">
-          <a href="#">Code →</a>
-        </div>
+        <h3>Raga Recognition from Audio</h3>
+        <p>Engineered a 228-dimensional hybrid feature vector and trained 5 classifiers on the Saraga
+           Carnatic dataset, reaching 77.8% accuracy (XGBoost) against a 33.3% random baseline under
+           severe data scarcity.</p>
+        <ul class="tags"><li>XGBoost</li><li>Librosa</li><li>Audio ML</li></ul>
+        <div class="project-links"><a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">Code →</a></div>
       </div>
       <div class="project-visual" aria-hidden="true">03</div>
     </article>
+
+    <article class="project reverse">
+      <div class="project-info">
+        <h3>Brain MRI Classification &amp; Segmentation</h3>
+        <p>Implemented a U-Net (4 contracting + 4 expanding blocks) for brain tumor segmentation, reaching
+           80% test accuracy, plus a fine-tuned YOLOv8 detector that outperformed a VGG-16 baseline.</p>
+        <ul class="tags"><li>U-Net</li><li>YOLOv8</li><li>Computer vision</li></ul>
+        <div class="project-links"><a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">Code →</a></div>
+      </div>
+      <div class="project-visual" aria-hidden="true">04</div>
+    </article>
+
+    <p class="more-projects">Also published: <a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">Automated Web Data Extraction via Zero-Shot NLP Classification</a>, ICDAM-2025 / Elsevier SSRN. More on <a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">GitHub →</a></p>
   </section>
 
   <section id="skills" class="section skills">
-    <p class="section-label">03 — Skills</p>
+    <p class="section-label">04 — Skills</p>
     <div class="skills-grid">
       <div class="skill-group">
         <h4>Languages</h4>
-        <p>Python, SQL, R</p>
+        <p>Python, SQL, R, HTML/CSS, JavaScript</p>
       </div>
       <div class="skill-group">
-        <h4>ML / Data</h4>
-        <p>scikit-learn, Pandas, NumPy, TensorFlow</p>
+        <h4>ML / GenAI</h4>
+        <p>NLP, LLMs (multi-agent), deep learning, model evaluation, A/B testing</p>
+      </div>
+      <div class="skill-group">
+        <h4>Libraries</h4>
+        <p>PyTorch, TensorFlow, scikit-learn, Pandas, NumPy, OpenCV, Librosa, Flask, Streamlit</p>
       </div>
       <div class="skill-group">
         <h4>Tools</h4>
-        <p>Git, Streamlit, Tableau, Excel</p>
-      </div>
-      <div class="skill-group">
-        <h4>Cloud</h4>
-        <p>[AWS / GCP / Azure — whichever you know]</p>
+        <p>Git, Tableau, Power BI, MySQL, Google Colab, Excel, Postman</p>
       </div>
     </div>
   </section>
 
   <section id="contact" class="section contact">
-    <p class="section-label">04 — Contact</p>
+    <p class="section-label">05 — Contact</p>
     <h2>Let's talk data.</h2>
-    <p class="contact-sub">Open to data scientist / analyst roles. Reach out — I usually reply within a day.</p>
+    <p class="contact-sub">Open to Data Scientist / ML roles. I usually reply within a day.</p>
     <div class="contact-links">
-      <a href="mailto:your.email@example.com">Email</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:akshasb1@uci.edu">Email</a>
+      <a href="https://www.linkedin.com/in/akshaya-bharadhwaj-22257721b/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">GitHub</a>
     </div>
   </section>
 
 </main>
 
 <footer class="footer">
-  <span>© <span id="year"></span> Akshaya</span>
+  <span>© <span id="year"></span> Akshaya Bharadhwaj</span>
   <span>Built with HTML/CSS, hosted on GitHub Pages</span>
 </footer>
 
