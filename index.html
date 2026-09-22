@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akshaya Bharadhwaj — Data Scientist</title>
-<meta name="description" content="Portfolio of Akshaya Bharadhwaj, Data Scientist — ML, NLP, computer vision, and applied research.">
+<meta name="description" content="Portfolio of Akshaya Bharadhwaj, Data Scientist — ML, computer vision, medical imaging, and applied research.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -28,12 +29,14 @@
 <header class="hero">
   <div class="hero-text">
     <p class="eyebrow">Data Scientist</p>
-    <h1>Building systems that learn from<br>images, audio, and text<span class="accent">.</span></h1>
+    <h1>Building systems that learn from<br>images, video, and messy data<span class="accent">.</span></h1>
+
     <p class="hero-sub">
-      I'm Akshaya, a Master's student in Data Science at UC Irvine, working across computer vision,
-      audio classification, NLP, and multi-agent LLM systems. I like problems where the data is messy
-      and the stakes are real.
+      I'm Akshaya, a Master's student in Data Science at UC Irvine, working across
+      computer vision, medical imaging, machine learning, and multimodal AI. I like
+      problems where the data is messy and there's something interesting to investigate.
     </p>
+
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View my work</a>
       <a href="mailto:akshasb1@uci.edu" class="btn btn-ghost">Get in touch</a>
@@ -44,189 +47,493 @@
     <div class="notecard-header">
       <span class="notecard-tag">FOCUS AREAS</span>
     </div>
+
     <div class="domain-list">
+
       <div class="domain-row">
         <span class="domain-icon" aria-hidden="true">◐</span>
         <div class="domain-text">
           <span class="domain-label">Vision</span>
-          <span class="domain-detail">Skin cancer detection, 400k+ images · 0.94 ROC-AUC</span>
+          <span class="domain-detail">Medical imaging, detection, segmentation · 400k+ images</span>
         </div>
       </div>
+
       <div class="domain-row">
         <span class="domain-icon" aria-hidden="true">◑</span>
         <div class="domain-text">
-          <span class="domain-label">Audio</span>
-          <span class="domain-detail">Raga classification · 5 classifiers, 228-dim features</span>
+          <span class="domain-label">Multimodal AI</span>
+          <span class="domain-detail">Video + time-series analysis · vision-language models</span>
         </div>
       </div>
+
       <div class="domain-row">
         <span class="domain-icon" aria-hidden="true">◒</span>
         <div class="domain-text">
-          <span class="domain-label">Language</span>
-          <span class="domain-detail">ValidClean · 5-agent LLM system for data prep</span>
+          <span class="domain-label">Applied ML</span>
+          <span class="domain-detail">Healthcare, manufacturing, experimentation &amp; evaluation</span>
         </div>
       </div>
+
     </div>
+
     <p class="notecard-caption">Selected work — see all projects below ↓</p>
   </div>
 </header>
 
+
 <main>
 
+  <!-- ABOUT -->
   <section id="about" class="section about">
     <p class="section-label">01 — About</p>
+
     <div class="about-grid">
+
       <p class="about-text">
-        I'm a data scientist pursuing my Master's at UC Irvine's Donald Bren School of Information and
-        Computer Sciences, with a Bachelor's in Data Science from NMIMS, Mumbai. My work spans deep
-        learning for medical imaging, audio classification under data scarcity, and multi-agent LLM
-        systems for automating data preprocessing. Before UCI, I spent over a year across three internships
-        applying ML to real industry problems, from EV battery manufacturing to streaming platform APIs.
+        I'm a data scientist pursuing my Master's at UC Irvine's Donald Bren School of
+        Information and Computer Sciences, with a Bachelor's in Data Science from NMIMS,
+        Mumbai. My work spans deep learning for medical imaging, multimodal analysis of
+        video and structured data, and machine learning for real-world industrial problems.
+        I enjoy building models, designing experiments, and understanding why they succeed
+        or fail.
       </p>
+
       <div class="about-facts">
-        <div class="fact"><span class="fact-label">Based in</span><span>Irvine, CA</span></div>
-        <div class="fact"><span class="fact-label">Education</span><span>M.S. Data Science, UC Irvine - Dec 2026</span></div>
-        <div class="fact"><span class="fact-label">Also</span><span>B.Tech Data Science, NMIMS Mumbai - Aug 2025</span></div>
-        <div class="fact"><span class="fact-label">Currently</span><span>Open to Data Scientist / Data Analyst / ML Engineer / Research roles</span></div>
+
+        <div class="fact">
+          <span class="fact-label">Based in</span>
+          <span>Irvine, CA</span>
+        </div>
+
+        <div class="fact">
+          <span class="fact-label">Education</span>
+          <span>M.S. Data Science, UC Irvine — Dec 2026</span>
+        </div>
+
+        <div class="fact">
+          <span class="fact-label">Also</span>
+          <span>B.Tech Data Science, NMIMS Mumbai — Aug 2025</span>
+        </div>
+
+        <div class="fact">
+          <span class="fact-label">Currently</span>
+          <span>Graduate Research Assistant at UC Irvine</span>
+        </div>
+
       </div>
     </div>
   </section>
 
+
+  <!-- EXPERIENCE -->
   <section id="experience" class="section">
     <p class="section-label">02 — Experience</p>
 
+
+    <!-- CHOC -->
     <article class="job">
+
+      <div class="job-meta">
+        <span class="job-dates">Jul 2026 – Sep 2026</span>
+      </div>
+
+      <div class="job-info">
+
+        <h3>
+          Data Science Intern, Pediatric Imaging — Children's Hospital of Orange County (CHOC)
+          <span class="job-loc">· Orange, CA</span>
+        </h3>
+
+        <ul>
+          <li>
+            Developed and evaluated a lightweight CNN for 3-class necrotizing enterocolitis
+            (NEC) classification from neonatal abdominal X-rays.
+          </li>
+
+          <li>
+            Conducted controlled architecture and augmentation experiments, systematically
+            varying convolutional depth and evaluating geometric, pixel-level, and
+            physics-informed noise transformations across multiple random seeds.
+          </li>
+
+          <li>
+            Built a reproducible image-classification pipeline with patient-level data
+            splitting and held-out test-set isolation, using Macro-F1 and Macro ROC-AUC
+            for model selection and evaluation.
+          </li>
+        </ul>
+
+      </div>
+    </article>
+
+
+    <!-- UCI GRADUATE RESEARCH ASSISTANT -->
+    <article class="job">
+
+      <div class="job-meta">
+        <span class="job-dates">Jul 2026 – Present</span>
+      </div>
+
+      <div class="job-info">
+
+        <h3>
+          Graduate Research Assistant — Department of Statistics, UC Irvine
+          <span class="job-loc">· Irvine, CA</span>
+        </h3>
+
+        <ul>
+          <li>
+            Building a benchmark dataset linking video frames from game replays with
+            exported time-series statistics to study turning points in match outcomes.
+          </li>
+
+          <li>
+            Prototyping turning-point detection using change-point detection and
+            vision-language models (VLMs), comparing visual signals against existing
+            win-probability baselines.
+          </li>
+        </ul>
+
+      </div>
+    </article>
+
+
+    <!-- WIPRO PARI -->
+    <article class="job">
+
       <div class="job-meta">
         <span class="job-dates">Dec 2024 – Aug 2025</span>
       </div>
+
       <div class="job-info">
-        <h3>Research Intern, Machine Learning - Wipro PARI <span class="job-loc">· Bangalore, India (Remote)</span></h3>
+
+        <h3>
+          Research Intern, Machine Learning — Wipro Infrastructure Engineering (Wipro PARI)
+          <span class="job-loc">· Bangalore, India (Remote)</span>
+        </h3>
+
         <ul>
-          <li>Built and validated ANN models (Python, scikit-learn, R²) to model Li-ion battery manufacturing processes and their effect on downstream material quality.</li>
-          <li>Developed a process-parameter framework across 16 manufacturing stages with industry experts to support data-driven optimization.</li>
-          <li>Contributed to 2 review papers and a research paper on ML-driven EV battery process optimization, currently under submission.</li>
+          <li>
+            Built and evaluated ANN models using Python and scikit-learn to model complex
+            Li-ion battery manufacturing processes and analyze how upstream parameters
+            impact downstream material quality.
+          </li>
+
+          <li>
+            Developed a process-parameter framework spanning 16 manufacturing stages
+            to support data-driven process optimization.
+          </li>
+
+          <li>
+            Contributed to research on machine-learning-driven EV battery manufacturing
+            and co-authored a published paper from the work.
+            <a
+              href="https://www.indianapublications.com/articles/271_ICDTE_Conference_6(4)_265-270_6a6622664ccb10.91254693.pdf"
+              target="_blank"
+              rel="noopener"
+            >Publication ↗</a>
+          </li>
         </ul>
+
       </div>
     </article>
 
+
+    <!-- WIPRO WATER -->
     <article class="job">
+
       <div class="job-meta">
-        <span class="job-dates">May 2024 - Jul 2024</span>
+        <span class="job-dates">May 2024 – Jul 2024</span>
       </div>
+
       <div class="job-info">
-        <h3>Data Science Intern - Wipro Water <span class="job-loc">· Navi Mumbai, India</span></h3>
+
+        <h3>
+          Data Science Intern — Wipro Water
+          <span class="job-loc">· Navi Mumbai, India</span>
+        </h3>
+
         <ul>
-          <li>Analyzed and cleaned datasets from urban commercial projects across major Indian cities to surface trends for business decisions.</li>
-          <li>Built Python automation scripts to clean, validate, and format raw data for Salesforce lead creation, replacing a manual process.</li>
+          <li>
+            Analyzed and cleaned operational datasets from commercial projects across
+            multiple Indian cities, identifying trends to support business decision-making.
+          </li>
+
+          <li>
+            Built Python-based automation scripts to clean, validate, and format raw data
+            for Salesforce lead creation, improving operational efficiency.
+          </li>
         </ul>
+
       </div>
     </article>
 
+
+    <!-- IDEA CREST -->
     <article class="job">
+
       <div class="job-meta">
         <span class="job-dates">May 2023 – Jul 2023</span>
       </div>
+
       <div class="job-info">
-        <h3>Intern - Idea Crest Solutions <span class="job-loc">· Bangalore, India (Remote)</span></h3>
+
+        <h3>
+          Intern — Idea Crest Solutions
+          <span class="job-loc">· Bangalore, India (Remote)</span>
+        </h3>
+
         <ul>
-          <li>Developed RESTful APIs (Python, Flask) and optimized MySQL schemas for a streaming platform management system.</li>
-          <li>Built Postman collections to test and document API workflows, reducing integration debugging time.</li>
+          <li>
+            Developed RESTful APIs using Python and Flask and optimized MySQL schemas
+            for a streaming platform management system.
+          </li>
+
+          <li>
+            Built Postman collections to test and document API workflows, reducing
+            integration debugging time.
+          </li>
         </ul>
+
       </div>
     </article>
+
   </section>
 
+
+  <!-- PROJECTS -->
   <section id="projects" class="section">
+
     <p class="section-label">03 — Projects</p>
 
+
+    <!-- VALIDCLEAN -->
     <article class="project">
+
       <div class="project-info">
+
         <h3>ValidClean — Multi-Agent Data Preprocessing</h3>
-        <p>A 5-agent LLM system that autonomously profiles datasets, infers ML objectives, and generates
-           preprocessing strategies.Validated with K-fold cross-validation, paired t-tests, and Cohen's d.
-           Presented at UCI GradSLAM 2026.</p>
-        <ul class="tags"><li>LLMs</li><li>Multi-agent</li><li>Python</li></ul>
-        <div class="project-links"><a href="https://github.com/akshaya-bharadhwaj/ValidClean" target="_blank" rel="noopener">Code →</a></div>
+
+        <p>
+          A 5-agent LLM system that autonomously profiles datasets, infers ML objectives,
+          and generates preprocessing strategies. Validated with K-fold cross-validation,
+          paired t-tests, and Cohen's d. Presented at UCI GradSLAM 2026.
+        </p>
+
+        <ul class="tags">
+          <li>LLMs</li>
+          <li>Multi-agent</li>
+          <li>Python</li>
+        </ul>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/akshaya-bharadhwaj/ValidClean"
+            target="_blank"
+            rel="noopener"
+          >Code →</a>
+        </div>
+
       </div>
+
       <div class="project-visual" aria-hidden="true">01</div>
+
     </article>
 
+
+    <!-- SKIN CANCER -->
     <article class="project reverse">
+
       <div class="project-info">
+
         <h3>Skin Cancer Detection from Dermoscopic Images</h3>
-        <p>A multimodal CNN + MLP pipeline trained on 400k+ dermoscopic images (ISIC 2024), reaching 0.93
-           recall and 0.942 ROC-AUC under 0.1% class imbalance.</p>
-        <ul class="tags"><li>PyTorch</li><li>CNN</li><li>Medical imaging</li></ul>
-        <div class="project-links"><a href="https://github.com/shripras1/Skin-Cancer-Detection-Prediction" target="_blank" rel="noopener">Code →</a></div>
+
+        <p>
+          A multimodal CNN + MLP pipeline trained on 400k+ dermoscopic images
+          (ISIC 2024), reaching 0.93 recall and 0.942 ROC-AUC under 0.1% class imbalance.
+        </p>
+
+        <ul class="tags">
+          <li>PyTorch</li>
+          <li>CNN</li>
+          <li>Medical imaging</li>
+        </ul>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/shripras1/Skin-Cancer-Detection-Prediction"
+            target="_blank"
+            rel="noopener"
+          >Code →</a>
+        </div>
+
       </div>
+
       <div class="project-visual" aria-hidden="true">02</div>
+
     </article>
 
+
+    <!-- RAGA -->
     <article class="project">
+
       <div class="project-info">
+
         <h3>Raga Recognition from Audio</h3>
-        <p>Engineered a 228-dimensional hybrid feature vector and trained 5 classifiers on the Saraga
-           Carnatic dataset, reaching 77.8% accuracy (XGBoost) against a 33.3% random baseline under
-           severe data scarcity.</p>
-        <ul class="tags"><li>XGBoost</li><li>Librosa</li><li>Audio ML</li></ul>
-        <div class="project-links"><a href="https://github.com/akshaya-bharadhwaj/Carnatic-Music-Raga-Classification" target="_blank" rel="noopener">Code →</a></div>
+
+        <p>
+          Engineered a 228-dimensional hybrid feature vector and trained 5 classifiers
+          on the Saraga Carnatic dataset, reaching 77.8% accuracy (XGBoost) against a
+          33.3% random baseline under severe data scarcity.
+        </p>
+
+        <ul class="tags">
+          <li>XGBoost</li>
+          <li>Librosa</li>
+          <li>Audio ML</li>
+        </ul>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/akshaya-bharadhwaj/Carnatic-Music-Raga-Classification"
+            target="_blank"
+            rel="noopener"
+          >Code →</a>
+        </div>
+
       </div>
+
       <div class="project-visual" aria-hidden="true">03</div>
+
     </article>
 
+
+    <!-- BRAIN MRI -->
     <article class="project reverse">
+
       <div class="project-info">
+
         <h3>Brain MRI Classification &amp; Segmentation</h3>
-        <p>Implemented a U-Net (4 contracting + 4 expanding blocks) for brain tumor segmentation, reaching
-           80% test accuracy, plus a fine-tuned YOLOv8 detector that outperformed a VGG-16 baseline.</p>
-        <ul class="tags"><li>U-Net</li><li>YOLOv8</li><li>Computer vision</li></ul>
-        <div class="project-links"><a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">Code →</a></div>
+
+        <p>
+          Implemented a U-Net for brain tumor segmentation, reaching 80% test accuracy,
+          plus a fine-tuned YOLOv8 detector for tumor detection and classification.
+        </p>
+
+        <ul class="tags">
+          <li>U-Net</li>
+          <li>YOLOv8</li>
+          <li>Computer vision</li>
+        </ul>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/akshaya-bharadhwaj"
+            target="_blank"
+            rel="noopener"
+          >Code →</a>
+        </div>
+
       </div>
+
       <div class="project-visual" aria-hidden="true">04</div>
+
     </article>
 
-    <p class="more-projects">Also published: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5751282" target="_blank" rel="noopener">Automated Web Data Extraction via Zero-Shot NLP Classification</a>, ICDAM-2025 / Elsevier SSRN. More on <a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">GitHub →</a></p>
+
+    <p class="more-projects">
+      Also published:
+      <a
+        href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5751282"
+        target="_blank"
+        rel="noopener"
+      >
+        Automated Web Data Extraction via Zero-Shot NLP Classification
+      </a>,
+      ICDAM-2025 / Elsevier SSRN.
+      More on
+      <a
+        href="https://github.com/akshaya-bharadhwaj"
+        target="_blank"
+        rel="noopener"
+      >GitHub →</a>
+    </p>
+
   </section>
 
+
+  <!-- SKILLS -->
   <section id="skills" class="section skills">
+
     <p class="section-label">04 — Skills</p>
+
     <div class="skills-grid">
+
       <div class="skill-group">
         <h4>Languages</h4>
         <p>Python, SQL, R, HTML/CSS, JavaScript</p>
       </div>
+
       <div class="skill-group">
         <h4>ML / GenAI</h4>
-        <p>NLP, LLMs (multi-agent), deep learning, model evaluation, A/B testing</p>
+        <p>Computer vision, deep learning, NLP, LLMs, multimodal AI, model evaluation</p>
       </div>
+
       <div class="skill-group">
         <h4>Libraries</h4>
         <p>PyTorch, TensorFlow, scikit-learn, Pandas, NumPy, OpenCV, Librosa, Flask, Streamlit</p>
       </div>
+
       <div class="skill-group">
         <h4>Tools</h4>
         <p>Git, Tableau, Power BI, MySQL, Google Colab, Excel, Postman</p>
       </div>
+
     </div>
   </section>
 
+
+  <!-- CONTACT -->
   <section id="contact" class="section contact">
+
     <p class="section-label">05 — Contact</p>
+
     <h2>Let's talk data.</h2>
-    <p class="contact-sub">Open to Data Scientist / ML roles. I usually reply within a day.</p>
+
+    <p class="contact-sub">
+      Open to Data Scientist / ML / Research roles. I usually reply within a day.
+    </p>
+
     <div class="contact-links">
+
       <a href="mailto:akshasb1@uci.edu">Email</a>
-      <a href="https://www.linkedin.com/in/akshaya-bharadhwaj-22257721b/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/akshaya-bharadhwaj" target="_blank" rel="noopener">GitHub</a>
+
+      <a
+        href="https://www.linkedin.com/in/akshaya-bharadhwaj-22257721/"
+        target="_blank"
+        rel="noopener"
+      >LinkedIn</a>
+
+      <a
+        href="https://github.com/akshaya-bharadhwaj"
+        target="_blank"
+        rel="noopener"
+      >GitHub</a>
+
     </div>
   </section>
 
 </main>
 
+
 <footer class="footer">
+
   <span>© <span id="year"></span> Akshaya Bharadhwaj</span>
+
   <span>Built with HTML/CSS, hosted on GitHub Pages</span>
+
 </footer>
+
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
@@ -234,3 +541,4 @@
 
 </body>
 </html>
+```
